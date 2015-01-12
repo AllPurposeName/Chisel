@@ -1,9 +1,9 @@
 class Header
 
 
-  def render(chunk)
+  def header_render(chunk)
     if chunk.start_with?("#####")
-      chunk.reverse.chop.chop.chop.chop.chop.prepend(">5h<").reverse.prepend("<h5>")
+      chunk.reverse.chop.chop.chop.chop.chop.prepend(">5h/<").reverse.prepend("<h5>")
     elsif chunk.start_with?("####")
       chunk.reverse.chop.chop.chop.chop.prepend(">4h/<").reverse.prepend("<h4>")
     elsif chunk.start_with?("###")

@@ -1,7 +1,7 @@
 class Emphasis
 
 
-  def render(chunk)
+  def emphasis_render(chunk)
     chunk.sub!(/\*/, '<em>')
     chunk.sub(/\*/, '</em>')
   end

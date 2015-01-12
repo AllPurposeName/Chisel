@@ -1,7 +1,7 @@
 class StrongTag
 
 
-  def render(chunk)
+  def strong_tag_render(chunk)
     chunk.sub!(/\*\S/, '<strong>')
     chunk.sub(/\*\S/, '</strong>')
   end
